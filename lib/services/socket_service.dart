@@ -21,7 +21,7 @@ class SocketService with ChangeNotifier {
   void _initConfig() {
     // Dart client
     socket = IO.io(
-        'http://192.168.20.24:3000',
+        'https://flutter-socket-io-server-9yxx.onrender.com/',
         IO.OptionBuilder()
             .setTransports(['websocket']) // for Flutter or Dart VM
             .enableAutoConnect()
